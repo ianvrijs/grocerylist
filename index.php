@@ -33,7 +33,7 @@ $oDb = new db('localhost', 'grocery', 'root', '');
         $data = htmlspecialchars($data);
         return $data;
       }
-    if($_SERVER['REQUEST_METHOD'] == "POST" && empty($_POST['todo']))
+    if($_SERVER['REQUEST_METHOD'] == "POST" && empty(secure($_POST['todo'])))
         {
         
             //define 
