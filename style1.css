@@ -16,3 +16,6 @@
     height: auto;
     padding: 50px;
 }
+.todo {
+    display: none;
+}
